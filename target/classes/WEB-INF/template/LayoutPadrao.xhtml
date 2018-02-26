@@ -12,7 +12,7 @@
 		<h:outputScript library="js" name="jquery.maskMoney.js" />	  	
 	</h:head>
 	<h:body>
-		<p:ajaxStatus styleClass="ajax-status">
+		<p:ajaxStatus styleClass="ajax-status" onsuccess="configurarMoeda()">
 			<f:facet name="start">
 				<h:graphicImage library="images" name="loading.gif" />
 			</f:facet>
