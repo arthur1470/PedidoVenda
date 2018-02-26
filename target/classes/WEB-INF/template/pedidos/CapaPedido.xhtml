@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+	<p:panelGrid columns="4" style="width: 100%; margin-top: 20px;" columnClasses="rotulo, campo, rotulo, campo">
+		<p:outputLabel value="Número" for="numero" />
+		<h:outputText value="12345" id="numero" />
+
+		<p:outputLabel value="Data de criação" for="dataCriacao" />
+		<h:outputText value="06/06/2013" id="dataCriacao" />
+				
+		<p:outputLabel value="Status" for="status" />
+		<h:outputText value="Orçamento" id="status" />	
+		
+		<p:outputLabel value="Vendedor" for="vendedor" />
+		<p:selectOneMenu id="vendedor">
+			<f:selectItem itemLabel="Selecione" />
+			<f:selectItem itemLabel="João das Couves Júnior" />
+		</p:selectOneMenu>
+		
+		<p:outputLabel value="Cliente" for="cliente" />
+		<p:autoComplete id="cliente" dropdown="true" size="40" />
+		
+		<p:outputLabel value="Forma de pagamento" for="formaPagamento" />
+		<p:selectOneMenu id="formaPagamento" >
+			<f:selectItem itemLabel="Selecione" />
+			<f:selectItem itemLabel="Selecione" />
+			<f:selectItem itemLabel="Cartão de crédito" />
+		</p:selectOneMenu>
+		
+		<p:outputLabel value="Valor de frete" for="valorFrete" />
+		<p:inputText id="valorFrete" size="10" />
+		
+		<p:outputLabel value="Subtotal" for="subtotal" style="font-weight: bold;" />
+		<h:outputText value="R$ 0,00" id="subtotal" style="font-weight: bold;" />
+		
+		<p:outputLabel value="Valor de desconto" for="valorDesconto" />
+		<p:inputText id="valorDesconto" size="10" />
+		
+		<p:outputLabel value="Total do pedido" for="totalPedido" style="font-weight: bold; font-size: 1.1em" />
+		<h:outputText value="R$ 0,00" id="totalPedido" style="font-weight: bold; font-size: 1.1em" />
+	</p:panelGrid>
+
+</ui:composition>

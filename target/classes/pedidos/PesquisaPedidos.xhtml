@@ -8,7 +8,7 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 	
-	<ui:define name="titulo">Pesquisa de Pedidos</ui:define>
+	<ui:define name="titulo">Pesquisa de pedidos</ui:define>
 	
 	<ui:define name="corpo">
 		<h:form>
@@ -20,7 +20,7 @@
 				</p:toolbarGroup>
 
 				<p:toolbarGroup align="right">
-					<p:button value="Novo" />
+					<p:button value="Novo" outcome="/pedidos/CadastroPedido" />
 				</p:toolbarGroup>
 			</p:toolbar>
 			
@@ -28,7 +28,8 @@
 				
 				<p:outputLabel value="Número" for="numero" />
 				<h:panelGroup>
-					<p:inputText value="" id="numero" size="10" /> a 
+					<p:inputText value="" id="numero" size="10" /> 
+					a 
 					<p:inputText value="" size="10" />				
 				</h:panelGroup>
 				
@@ -53,11 +54,11 @@
 			</p:panelGrid>
 			
 			
-			<p:dataTable value="pesquisaPedidosBean.pedidos" var="pedido" rows="10" paginator="true" 
+			<p:dataTable value="#{pesquisaPedidosBean.pedidosFiltrados}" var="pedido" rows="20" paginator="true" 
 				paginatorPosition="bottom" paginatorAlwaysVisible="false" emptyMessage="Nenhum pedido encontrado." 
 				style="margin-top: 20px;" id="pedidosTable" >
 				
-				<p:column headerText="Número" style="text-align: center; width: ;">
+				<p:column headerText="Número" style="text-align: center; width: 100px;">
 					<h:outputText value="12345" />
 				</p:column>
 					
@@ -69,22 +70,22 @@
 					<h:outputText value="José Júnior" />
 				</p:column>
 					
-				<p:column headerText="Data de criação">
+				<p:column headerText="Data de criação" style="width:140px; text-align: center;" >
 					<h:outputText value="05/06/2013"></h:outputText>
 				</p:column>
 
-				<p:column headerText="Valor total">
+				<p:column headerText="Valor total" style="width:120px; text-align: right;" >
 					<h:outputText value="R$1.240,00"></h:outputText>
 				</p:column>
 
-				<p:column headerText="Status">
+				<p:column headerText="Status" style="width:100px;">
 					<h:outputText value="Emitido"></h:outputText>
 				</p:column>
 
-				<p:column>
+				<p:column style="width:50px; text-align: center;">
 					<p:button icon="ui-icon-pencil" />
 				</p:column>
-			</p:dataTable>
+			</p:dataTable> 
 		</h:form>
 	</ui:define>
 	

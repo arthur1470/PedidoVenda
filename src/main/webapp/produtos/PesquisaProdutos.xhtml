@@ -8,7 +8,7 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 	
-	<ui:define name="titulo">Pesquisar Produto</ui:define>
+	<ui:define name="titulo">Pesquisar produto</ui:define>
 	
 	<ui:define name="corpo">
 		<h:form>
@@ -58,10 +58,16 @@
 				
 				<p:column>
 					<p:button icon="ui-icon-pencil" title="Editar" />
-					<p:commandButton icon="ui-icon-trash" title="Excluir" />
+					<p:commandButton icon="ui-icon-trash" title="Excluir" oncomplete="PF('confirmacaoExclusao').show()" />
 				</p:column>
 				
 			</p:dataTable>
+			
+			<p:confirmDialog header="Exclusão de produto" message="Tem certeza que deseja excluir o produto?" 
+				widgetVar="confirmacaoExclusao">
+				<p:button value="Nao" onclick="PF('confirmacaoExclusao').hide(); return false;" />
+				<p:commandButton value="Sim" />
+			</p:confirmDialog>
 		</h:form>
 	</ui:define>
 	
