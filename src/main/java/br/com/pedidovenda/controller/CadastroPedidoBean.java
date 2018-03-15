@@ -1,20 +1,21 @@
 package br.com.pedidovenda.controller;
 
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-
-@ManagedBean(name = "cadastroPedidoBean")
+@Named("cadastroPedidoBean")
 @RequestScoped
 public class CadastroPedidoBean implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private List<Integer> itens;
-	
-	public CadastroPedidoBean() {
+
+	@PostConstruct
+	public void init() {
 		this.itens = new ArrayList<>();
 		
 		itens.add(1);

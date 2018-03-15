@@ -1,20 +1,21 @@
 package br.com.pedidovenda.controller;
 
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
-
-@ManagedBean(name = "pesquisaProdutosBean")
+@Named("pesquisaProdutosBean")
 @SessionScoped
 public class PesquisaProdutosBean implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private List<Integer> produtosFiltrados;
 
-	public PesquisaProdutosBean() {
+	@PostConstruct
+	public void init() {
 		this.produtosFiltrados = new ArrayList<>();
 		for (int i = 0; i < 50; i++) {
 			this.produtosFiltrados.add(i);

@@ -9,8 +9,5 @@
         <exception-handler-factory>
             br.com.pedidovenda.util.jsf.JsfExceptionHandlerFactory
         </exception-handler-factory>
-
     </factory>
-
-
 </faces-config>
