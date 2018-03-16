@@ -16,25 +16,26 @@ public class Endereco implements Serializable{
     @Column(name = "ID_ENDERECO")
     private Long id;
 
-    @Column(name = "LOGRADOURO")
+    @Column(name = "LOGRADOURO", nullable = false, length = 150)
     private String logradouro;
 
-    @Column(name = "NUMERO")
+    @Column(name = "NUMERO", nullable = false,length = 20)
     private String numero;
 
-    @Column(name = "COMPLEMENTO")
+    @Column(name = "COMPLEMENTO", length = 150)
     private String complemento;
 
-    @Column(name = "CIDADE")
+    @Column(name = "CIDADE", nullable = false, length = 60)
     private String cidade;
 
-    @Column(name = "UF")
+    @Column(name = "UF", nullable = false, length = 60)
     private String uf;
 
-    @Column
+    @Column(name = "CEP", nullable = false, length = 9)
     private String cep;
 
     @ManyToOne
+    @JoinColumn(name = "ID_CLIENTE_FK", nullable = false)
     private Cliente cliente;
 
     public Long getId() {

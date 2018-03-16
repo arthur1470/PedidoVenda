@@ -13,24 +13,24 @@ public class Cliente implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_CLIENTE")
     private Long id;
 
-    @Column(name = "NOME")
+    @Column(name = "NOME", nullable = false)
     private String nome;
 
-    @Column(name = "EMAIL")
+    @Column(name = "EMAIL", nullable = false)
     private String email;
 
-    @Column(name = "DOCUMENTO_RECEITA_FEDERAL")
+    @Column(name = "DOC_RECEITA_FEDERAL", nullable = false, length = 14)
     private String documentoReceitaFederal;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "TIPO_CLIENTE")
+    @Column(name = "TIPO_CLIENTE", nullable = false, length = 10)
     private TipoPessoa tipo;
 
-    @OneToMany
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Endereco> enderecos = new ArrayList<Endereco>();
 
     public Long getId() {

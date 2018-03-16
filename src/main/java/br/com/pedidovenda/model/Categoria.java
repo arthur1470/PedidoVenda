@@ -1,18 +1,28 @@
 package br.com.pedidovenda.model;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "CATEGORIA")
 public class Categoria implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_CATEGORIA")
     private Long id;
 
+    @Column(name = "DESCRICAO", nullable = false, length = 60)
     private String descricao;
 
+    @ManyToOne
+    @JoinColumn(name = "ID_CATEGORIA_PAI_FK")
     private Categoria categoriaPai;
 
+    @OneToMany(mappedBy = "categoriaPai", cascade = CascadeType.ALL)
     private List<Categoria> subcategorias = new ArrayList<Categoria>();
 
     public Long getId() {

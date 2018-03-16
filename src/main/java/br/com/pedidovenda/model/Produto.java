@@ -1,16 +1,33 @@
 package br.com.pedidovenda.model;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+@Entity
+@Table(name = "PRODUTO")
 public class Produto implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_PRODUTO")
     private Long id;
+
+    @Column(name = "NOME", nullable = false, length = 80)
     private String nome;
+
+    @Column(name = "SKU", nullable = false, length = 20, unique = true)
     private String sku;
+
+    @Column(name = "VALOR_UNITARIO", nullable = false, precision = 10, scale = 2)
     private BigDecimal valorUnitario;
+
+    @Column(name = "QUANTIDADE_ESTOQUE", nullable = false, length = 5)
     private Integer quantidadeEstoque;
+
+    @ManyToOne
+    @JoinColumn(name = "ID_CATEGORIA_FK", nullable = false)
     private Categoria categoria;
 
     public Long getId() {
@@ -34,7 +51,7 @@ public class Produto implements Serializable {
     }
 
     public void setSku(String sku) {
-        this.sku = sku;
+        this.sku = sku == null ? null : sku.toUpperCase();
     }
 
     public BigDecimal getValorUnitario() {
