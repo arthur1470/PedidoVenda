@@ -67,7 +67,7 @@
 		
 		<script>
 			function configurarMoeda(){
-				$(".moeda").maskMoney({ decimal: ",", thousands: ".", allowZero: true });
+				$(".moeda").maskMoney({ decimal: ",", thousands: ".", allowZero: true, prefix: 'R$', affixesStay: false });
 			}
 			
 			$(document).ready(function() {

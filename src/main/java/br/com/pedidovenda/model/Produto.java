@@ -1,6 +1,12 @@
 package br.com.pedidovenda.model;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -14,15 +20,20 @@ public class Produto implements Serializable {
     @Column(name = "ID_PRODUTO")
     private Long id;
 
+    @NotBlank
+    @Size(max = 80)
     @Column(name = "NOME", nullable = false, length = 80)
     private String nome;
 
+    @NotBlank
     @Column(name = "SKU", nullable = false, length = 20, unique = true)
     private String sku;
 
+    @NotNull
     @Column(name = "VALOR_UNITARIO", nullable = false, precision = 10, scale = 2)
     private BigDecimal valorUnitario;
 
+    @NotNull @Min(0) @Max(9999)
     @Column(name = "QUANTIDADE_ESTOQUE", nullable = false, length = 5)
     private Integer quantidadeEstoque;
 
