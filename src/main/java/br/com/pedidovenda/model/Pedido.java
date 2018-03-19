@@ -1,6 +1,7 @@
 package br.com.pedidovenda.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.List;
 @Entity
 @Table(name = "PEDIDO")
 public class Pedido implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -17,10 +19,12 @@ public class Pedido implements Serializable {
     @Column(name = "ID_PEDIDO")
     private Long id;
 
+    @NotNull
     @Column(name = "DATA_CRIACAO", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataCriacao;
 
+    @NotNull
     @Column(name = "DATA_ENTREGA", nullable = false)
     @Temporal(TemporalType.DATE)
     private Date dataEntrega;
@@ -28,19 +32,24 @@ public class Pedido implements Serializable {
     @Column(name = "OBSERVACAO", columnDefinition = "text")
     private String observacao;
 
+    @NotNull
     @Column(name = "VALOR_FRETE", nullable = false, precision = 10, scale = 2)
     private BigDecimal valorFrete;
 
+    @NotNull
     @Column(name = "VALOR_DESCONTO", nullable = false, precision = 10, scale = 2)
     private BigDecimal valorDesconto;
 
+    @NotNull
     @Column(name = "VALOR_TOTAL", nullable = false, precision = 10, scale = 2)
     private BigDecimal valorTotal;
 
+    @NotNull
     @Column(name = "FORMA_PAGAMENTO", nullable = false, length = 20)
     @Enumerated(EnumType.STRING)
     private FormaPagamento formaPagamento;
 
+    @NotNull
     @Column(name = "STATUS", nullable = false, length = 20)
     @Enumerated(EnumType.STRING)
     private StatusPedido status;
@@ -48,10 +57,12 @@ public class Pedido implements Serializable {
     @Embedded
     private EnderecoEntrega enderecoEntrega;
 
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "ID_VENDEDOR_FK", nullable = false)
     private Usuario vendedor;
 
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "ID_CLIENTE_FK", nullable = false)
     private Cliente cliente;
