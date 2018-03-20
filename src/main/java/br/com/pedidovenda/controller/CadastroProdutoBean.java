@@ -3,7 +3,9 @@ package br.com.pedidovenda.controller;
 import br.com.pedidovenda.model.Categoria;
 import br.com.pedidovenda.model.Produto;
 import br.com.pedidovenda.repository.Categorias;
+import br.com.pedidovenda.util.jsf.FacesUtil;
 
+import javax.faces.convert.FacesConverter;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -22,6 +24,7 @@ public class CadastroProdutoBean implements Serializable {
     private Produto produto;
 
     private List<Categoria> categoriasRaizes;
+    private List<Categoria> subCategorias;
 
     @NotNull
     private Categoria categoriaPai;
@@ -31,7 +34,13 @@ public class CadastroProdutoBean implements Serializable {
     }
 
     public void inicializar(){
-        categoriasRaizes = categorias.raizes();
+        if(FacesUtil.isNotPostback()) {
+            categoriasRaizes = categorias.raizes();
+        }
+    }
+
+    public void carregarSubcategorias(){
+        subCategorias = categorias.subcategoriasDe(categoriaPai);
     }
 
     public void salvar(){
@@ -52,5 +61,9 @@ public class CadastroProdutoBean implements Serializable {
 
     public void setCategoriaPai(Categoria categoriaPai) {
         this.categoriaPai = categoriaPai;
+    }
+
+    public List<Categoria> getSubCategorias() {
+        return subCategorias;
     }
 }

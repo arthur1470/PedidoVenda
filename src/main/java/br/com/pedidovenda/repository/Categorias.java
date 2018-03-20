@@ -14,10 +14,15 @@ public class Categorias implements Serializable {
     private EntityManager manager;
 
     public List<Categoria> raizes(){
-        return manager.createQuery("FROM Categoria", Categoria.class).getResultList();
+        return manager.createQuery("FROM Categoria WHERE categoriaPai IS NULL", Categoria.class).getResultList();
     }
 
     public Categoria porId(Long id) {
         return manager.find(Categoria.class, id);
+    }
+
+    public List<Categoria> subcategoriasDe(Categoria categoria){
+        return manager.createQuery("FROM Categoria WHERE categoriaPai = :raiz",
+                Categoria.class).setParameter("raiz", categoria).getResultList();
     }
 }
