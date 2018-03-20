@@ -2,11 +2,12 @@ package br.com.pedidovenda.controller;
 
 import br.com.pedidovenda.model.Categoria;
 import br.com.pedidovenda.model.Produto;
+import br.com.pedidovenda.repository.Categorias;
 
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.persistence.EntityManager;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
@@ -16,23 +17,25 @@ public class CadastroProdutoBean implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Inject
-    private EntityManager manager;
+    private Categorias categorias;
 
     private Produto produto;
 
     private List<Categoria> categoriasRaizes;
+
+    @NotNull
+    private Categoria categoriaPai;
 
     public CadastroProdutoBean() {
         this.produto = new Produto();
     }
 
     public void inicializar(){
-        System.out.println("inicializando");
-        categoriasRaizes = manager.createQuery("FROM Categoria").getResultList();
+        categoriasRaizes = categorias.raizes();
     }
 
     public void salvar(){
-
+        System.out.println("categoria selecionada " + categoriaPai.getDescricao());
     }
 
     public Produto getProduto() {
@@ -43,4 +46,11 @@ public class CadastroProdutoBean implements Serializable {
         return categoriasRaizes;
     }
 
+    public Categoria getCategoriaPai() {
+        return categoriaPai;
+    }
+
+    public void setCategoriaPai(Categoria categoriaPai) {
+        this.categoriaPai = categoriaPai;
+    }
 }
