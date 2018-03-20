@@ -7,36 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b9886dd-4359-42fb-9ee4-07304dde1ef9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroPedidoBean.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroPedidoBean.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/EnderecoEntrega.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/EnderecoEntrega.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/FormaPagamento.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/FormaPagamento.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Pedido.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Pedido.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Produto.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Produto.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/BotoesPedido.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/BotoesPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/CapaPedido.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/CapaPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/DadosEntregaPedido.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/DadosEntregaPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/ObservacaoPedido.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/ObservacaoPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pedidos/CadastroPedido.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/pedidos/CadastroPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda.war" afterPath="$PROJECT_DIR$/target/PedidoVenda.war" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/controller/CadastroPedidoBean.class" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/controller/CadastroPedidoBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/EnderecoEntrega.class" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/EnderecoEntrega.class" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/FormaPagamento.class" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/FormaPagamento.class" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Pedido.class" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Pedido.class" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Produto.class" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Produto.class" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/faces-config.xml" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/BotoesPedido.xhtml" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/BotoesPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/CapaPedido.xhtml" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/CapaPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/DadosEntregaPedido.xhtml" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/DadosEntregaPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/ObservacaoPedido.xhtml" afterPath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/ObservacaoPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/pedidos/CadastroPedido.xhtml" afterPath="$PROJECT_DIR$/target/PedidoVenda/pedidos/CadastroPedido.xhtml" />
-      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/produtos/CadastroProduto.xhtml" afterPath="$PROJECT_DIR$/target/PedidoVenda/produtos/CadastroProduto.xhtml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/controller/CadastroPedidoBean.class" afterPath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/controller/CadastroPedidoBean.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/EnderecoEntrega.class" afterPath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/EnderecoEntrega.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/FormaPagamento.class" afterPath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/FormaPagamento.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Pedido.class" afterPath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Pedido.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Produto.class" afterPath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Produto.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda.war" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +21,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ValidationMessages.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
+      <file leaf-file-name="CadastroProdutoBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="73" lean-forward="true" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
+            <state relative-caret-position="-119">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CadastroProduto.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -69,9 +55,9 @@
         <option value="hibernate-main-4.0" />
         <option value="Enum" />
         <option value="Singleton" />
-        <option value="Class" />
         <option value="package_json" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -117,9 +103,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/ItemPedido.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/LayoutPadrao.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/DadosEntregaPedido.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/template/pedidos/ObservacaoPedido.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/EnderecoEntrega.java" />
@@ -136,6 +120,9 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Produto.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/validation/SKU.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ValidationMessages.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/EntityManagerProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" />
       </list>
     </option>
   </component>
@@ -218,6 +205,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
@@ -553,18 +568,19 @@
       <workItem from="1521214332889" duration="3934000" />
       <workItem from="1521411328650" duration="2430000" />
       <workItem from="1521422133197" duration="6869000" />
-      <workItem from="1521491530280" duration="4532000" />
+      <workItem from="1521491530280" duration="7062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43768000" />
+    <option name="totallyTimeSpent" value="46298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -586,7 +602,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27515724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -612,13 +628,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/JsfExceptionHandlerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Home.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -786,22 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-            <element signature="e#437#438#0" expanded="false" />
-            <element signature="e#464#465#0" expanded="false" />
-            <element signature="e#531#532#0" expanded="false" />
-            <element signature="e#566#567#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/StatusPedido.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -813,6 +806,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -852,6 +846,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="13" column="80" lean-forward="false" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -859,14 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="55" column="67" lean-forward="false" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,8 +951,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="73" lean-forward="true" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
+        <state relative-caret-position="68">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/EntityManagerProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#554#555#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#684#685#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+            <element signature="e#785#786#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding />
         </state>
       </provider>
