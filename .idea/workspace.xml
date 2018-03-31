@@ -7,11 +7,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b9886dd-4359-42fb-9ee4-07304dde1ef9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Produto.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Produto.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/repository/Categorias.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/repository/Categorias.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/service/NegocioException.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/service/NegocioException.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/FacesUtil.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/FacesUtil.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda.war" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/Erro.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/Home.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/Login.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/META-INF/context.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/beans.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/META-INF/persistence.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/ValidationMessages.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/Messages.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/controller/CadastroPedidoBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/controller/CadastroProdutoBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/controller/PesquisaPedidosBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/controller/PesquisaProdutosBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/converter/CategoriaConverter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Categoria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Cliente.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Endereco.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/EnderecoEntrega.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/FormaPagamento.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Grupo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/ItemPedido.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Pedido.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Produto.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/StatusPedido.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/TipoPessoa.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/model/Usuario.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/repository/Categorias.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/service/NegocioException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/util/cdi/CDIServiceLocator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/util/jpa/EntityManagerProducer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/util/jsf/FacesUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/util/jsf/JsfExceptionHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/util/jsf/JsfExceptionHandlerFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/br/com/pedidovenda/validation/SKU.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/classes/log4j.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/faces-config.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/classmate-0.8.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/commons-logging-1.1.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/hibernate-core-4.2.3.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/hibernate-entitymanager-4.2.3.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/hibernate-validator-5.0.1.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/javassist-3.15.0-GA.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/javax.faces-2.2.13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/jboss-logging-3.1.1.GA.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/mysql-connector-java-5.1.25.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/primefaces-6.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/lib/weld-servlet-1.1.10.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/LayoutPadrao.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/BotoesPedido.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/CapaPedido.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/DadosEntregaPedido.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/ItensPedido.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/template/pedidos/ObservacaoPedido.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/pedidos/CadastroPedido.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/pedidos/PesquisaPedidos.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/produtos/CadastroProduto.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/produtos/PesquisaProdutos.xhtml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/resources/css/sistema.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/resources/images/alerta.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/resources/images/loading.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/resources/images/logo-algaworks.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/resources/images/seta-para-baixo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/PedidoVenda/resources/js/jquery.maskMoney.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ValidationMessages.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/Messages.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/controller/CadastroPedidoBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/controller/CadastroProdutoBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/controller/PesquisaPedidosBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/controller/PesquisaProdutosBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/converter/CategoriaConverter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Categoria.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Cliente.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Endereco.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/EnderecoEntrega.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/FormaPagamento.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Grupo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/ItemPedido.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Pedido.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Produto.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/StatusPedido.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/TipoPessoa.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/model/Usuario.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/repository/Categorias.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/service/NegocioException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/util/cdi/CDIServiceLocator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/util/jpa/EntityManagerProducer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/util/jsf/FacesUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/util/jsf/JsfExceptionHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/util/jsf/JsfExceptionHandlerFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/pedidovenda/validation/SKU.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.algaworks/PedidoVenda/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.algaworks/PedidoVenda/pom.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +131,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CadastroProduto.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,7 +181,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/JsfExceptionHandlerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/Erro.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/service/NegocioException.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/JsfExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
@@ -99,11 +218,17 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/EntityManagerProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/converter/CategoriaConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/cdi/CDIServiceLocator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/FacesUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/repository/Categorias.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/FacesUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/Transactional.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/TransactionInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/service/NegocioException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/service/CadastroProdutoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Produto.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pedidovenda/repository/Produtos.java" />
       </list>
     </option>
   </component>
@@ -182,9 +307,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,7 +383,36 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="cdi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
@@ -278,6 +429,15 @@
               <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,7 +445,16 @@
               <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pedidovenda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PedidoVenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
@@ -293,7 +462,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PedidoVenda" type="b2602c69:ProjectViewProjectNode" />
@@ -346,6 +514,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -358,17 +529,20 @@
     <property name="DefaultHtmlFileTemplate" value="XHTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.pedidovenda.repository" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IdeaProjects\PedidoVenda\src\main\webapp\META-INF" />
+      <recent name="C:\IdeaProjects\PedidoVenda\src\main\resources\br.com.pedidovenda" />
+      <recent name="C:\IdeaProjects\PedidoVenda\src\main\java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\IdeaProjects\PedidoVenda\src\main\resources\br\com\pedidovenda" />
       <recent name="C:\IdeaProjects\PedidoVenda\src\main\resources" />
       <recent name="C:\IdeaProjects\PedidoVenda\src\main\resources\br\com\pedidovenda\mensagens" />
       <recent name="C:\IdeaProjects\PedidoVenda\src\main\java\br\com\pedidovenda\util\jpa" />
       <recent name="C:\IdeaProjects\PedidoVenda\src\main\java\br\com\pedidovenda" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\IdeaProjects\PedidoVenda\src\main\webapp\META-INF" />
-      <recent name="C:\IdeaProjects\PedidoVenda\src\main\resources\br.com.pedidovenda" />
-      <recent name="C:\IdeaProjects\PedidoVenda\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -615,15 +789,17 @@
       <workItem from="1521214332889" duration="3934000" />
       <workItem from="1521411328650" duration="2430000" />
       <workItem from="1521422133197" duration="6869000" />
-      <workItem from="1521491530280" duration="16130000" />
+      <workItem from="1521491530280" duration="20322000" />
+      <workItem from="1522470524001" duration="1257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55366000" />
+    <option name="totallyTimeSpent" value="60815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -639,7 +815,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -648,7 +823,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4198113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -658,6 +833,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -674,50 +850,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/PesquisaPedidosBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/PesquisaProdutosBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -748,27 +880,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/CriarTabelas.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Endereco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Grupo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -871,30 +982,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/package.json" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/JsfExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Pedido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding />
-        </state>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/FormaPagamento.java">
@@ -930,29 +1025,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="ResourceBundle">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/validation/SKU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/EntityManagerProducer.java">
@@ -982,15 +1058,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/converter/CategoriaConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroPedidoBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="307">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/service/NegocioException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#547#548#0" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
+            <element signature="e#188#189#0" expanded="false" />
+            <element signature="e#214#215#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/service/CadastroProdutoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Pedido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/Transactional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jpa/TransactionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/JsfExceptionHandlerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/JsfExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/FacesUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="59" lean-forward="false" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Endereco.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,34 +1165,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroPedidoBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        <state relative-caret-position="323">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/model/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="194">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/util/jsf/FacesUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/repository/Produtos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/validation/SKU.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/converter/CategoriaConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1042,16 +1232,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pedidovenda/controller/CadastroProdutoBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/produtos/CadastroProduto.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1662#1663#0" expanded="true" />
-            <element signature="e#1698#1699#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

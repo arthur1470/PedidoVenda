@@ -3,6 +3,8 @@ package br.com.pedidovenda.controller;
 import br.com.pedidovenda.model.Categoria;
 import br.com.pedidovenda.model.Produto;
 import br.com.pedidovenda.repository.Categorias;
+import br.com.pedidovenda.service.CadastroProdutoService;
+import br.com.pedidovenda.service.NegocioException;
 import br.com.pedidovenda.util.jsf.FacesUtil;
 
 import javax.faces.convert.FacesConverter;
@@ -11,6 +13,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Named("cadastroProdutoBean")
@@ -21,6 +24,9 @@ public class CadastroProdutoBean implements Serializable {
     @Inject
     private Categorias categorias;
 
+    @Inject
+    private CadastroProdutoService cadastroProdutoService;
+
     private Produto produto;
 
     private List<Categoria> categoriasRaizes;
@@ -30,7 +36,7 @@ public class CadastroProdutoBean implements Serializable {
     private Categoria categoriaPai;
 
     public CadastroProdutoBean() {
-        this.produto = new Produto();
+        limpar();
     }
 
     public void inicializar(){
@@ -43,8 +49,17 @@ public class CadastroProdutoBean implements Serializable {
         subCategorias = categorias.subcategoriasDe(categoriaPai);
     }
 
+    private void limpar(){
+        produto = new Produto();
+        categoriaPai = null;
+        subCategorias = new ArrayList<>();
+    }
+
     public void salvar(){
-        System.out.println("categoria selecionada " + categoriaPai.getDescricao());
+        this.produto = cadastroProdutoService.salvar(this.produto);
+        limpar();
+
+        FacesUtil.addInfoMessage("Produto salvo com sucesso!");
     }
 
     public Produto getProduto() {
