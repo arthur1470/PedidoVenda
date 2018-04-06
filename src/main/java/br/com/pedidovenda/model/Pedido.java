@@ -175,37 +175,56 @@ public class Pedido implements Serializable {
     }
 
     @Transient
-    public boolean isNovo(){
+    public boolean isNovo() {
         return getId() == null;
     }
 
     @Transient
-    public boolean isExistente(){
+    public boolean isExistente() {
         return !isNovo();
     }
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		return result;
-	}
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        return result;
+    }
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Pedido other = (Pedido) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		return true;
-	}
+    @Transient
+    public BigDecimal getValorSubtotal() {
+        return this.getValorTotal().subtract(this.getValorFrete()).add(this.getValorDesconto());
+    }
+
+    public void recalcularValorTotal() {
+        BigDecimal total = BigDecimal.ZERO;
+
+        total = total.add(this.getValorFrete()).subtract(this.getValorDesconto());
+
+        for (ItemPedido item : this.getItens()) {
+            if (item.getProduto() != null && item.getProduto().getId() != null) {
+                total = total.add(item.getValorTotal());
+            }
+        }
+
+        this.setValorTotal(total);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Pedido other = (Pedido) obj;
+        if (id == null) {
+            if (other.id != null)
+                return false;
+        } else if (!id.equals(other.id))
+            return false;
+        return true;
+    }
 }
