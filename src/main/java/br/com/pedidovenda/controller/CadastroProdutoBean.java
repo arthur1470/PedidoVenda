@@ -4,10 +4,8 @@ import br.com.pedidovenda.model.Categoria;
 import br.com.pedidovenda.model.Produto;
 import br.com.pedidovenda.repository.Categorias;
 import br.com.pedidovenda.service.CadastroProdutoService;
-import br.com.pedidovenda.service.NegocioException;
 import br.com.pedidovenda.util.jsf.FacesUtil;
 
-import javax.faces.convert.FacesConverter;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -39,23 +37,27 @@ public class CadastroProdutoBean implements Serializable {
         limpar();
     }
 
-    public void inicializar(){
-        if(FacesUtil.isNotPostback()) {
+    public void inicializar() {
+        if (FacesUtil.isNotPostback()) {
             categoriasRaizes = categorias.raizes();
+
+            if (this.categoriaPai != null) {
+                carregarSubcategorias();
+            }
         }
     }
 
-    public void carregarSubcategorias(){
+    public void carregarSubcategorias() {
         subCategorias = categorias.subcategoriasDe(categoriaPai);
     }
 
-    private void limpar(){
+    private void limpar() {
         produto = new Produto();
         categoriaPai = null;
         subCategorias = new ArrayList<>();
     }
 
-    public void salvar(){
+    public void salvar() {
         this.produto = cadastroProdutoService.salvar(this.produto);
         limpar();
 
@@ -64,6 +66,14 @@ public class CadastroProdutoBean implements Serializable {
 
     public Produto getProduto() {
         return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
+
+        if (this.produto != null) {
+            this.categoriaPai = this.produto.getCategoria().getCategoriaPai();
+        }
     }
 
     public List<Categoria> getCategoriasRaizes() {
@@ -80,5 +90,9 @@ public class CadastroProdutoBean implements Serializable {
 
     public List<Categoria> getSubCategorias() {
         return subCategorias;
+    }
+
+    public boolean isEditando() {
+        return this.produto.getId() != null;
     }
 }

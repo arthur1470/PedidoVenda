@@ -3,38 +3,54 @@ package br.com.pedidovenda.controller;
 import br.com.pedidovenda.model.Produto;
 import br.com.pedidovenda.repository.Produtos;
 import br.com.pedidovenda.repository.filter.ProdutoFilter;
+import br.com.pedidovenda.util.jsf.FacesUtil;
 
-import javax.enterprise.context.SessionScoped;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
 
 @Named("pesquisaProdutosBean")
-@SessionScoped
+@ViewScoped
 public class PesquisaProdutosBean implements Serializable {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	private List<Produto> produtosFiltrados;
+    @Inject
+    private Produtos produtos;
 
-	private ProdutoFilter filtro;
+    private ProdutoFilter filtro;
+    private List<Produto> produtosFiltrados;
 
-	public PesquisaProdutosBean(){
-		filtro = new ProdutoFilter();
-	}
+    private Produto produtoSelecionado;
 
-	@Inject
-	private Produtos produtos;
+    public PesquisaProdutosBean() {
+        filtro = new ProdutoFilter();
+    }
 
-	public void pesquisar(){
-		produtosFiltrados = produtos.filtrados(filtro);
-	}
+    public void pesquisar() {
+        produtosFiltrados = produtos.filtrados(filtro);
+    }
 
-	public List<Produto> getProdutosFiltrados() {
-		return produtosFiltrados;
-	}
+    public void remover() {
+        produtos.remover(produtoSelecionado);
+        produtosFiltrados.remove(produtoSelecionado);
+        FacesUtil.addInfoMessage("Produto " + produtoSelecionado.getSku() + " excluído com sucesso!");
+    }
 
-	public ProdutoFilter getFiltro() {
-		return filtro;
-	}
+    public List<Produto> getProdutosFiltrados() {
+        return produtosFiltrados;
+    }
+
+    public ProdutoFilter getFiltro() {
+        return filtro;
+    }
+
+    public Produto getProdutoSelecionado() {
+        return produtoSelecionado;
+    }
+
+    public void setProdutoSelecionado(Produto produtoSelecionado) {
+        this.produtoSelecionado = produtoSelecionado;
+    }
 }

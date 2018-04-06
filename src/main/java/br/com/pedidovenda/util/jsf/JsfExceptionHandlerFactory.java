@@ -7,7 +7,7 @@ public class JsfExceptionHandlerFactory extends ExceptionHandlerFactory {
 
     private ExceptionHandlerFactory parent;
 
-    public JsfExceptionHandlerFactory(ExceptionHandlerFactory parent){
+    public JsfExceptionHandlerFactory(ExceptionHandlerFactory parent) {
         this.parent = parent;
     }
 

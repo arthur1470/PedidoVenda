@@ -34,15 +34,15 @@ public class Pedido implements Serializable {
 
     @NotNull
     @Column(name = "VALOR_FRETE", nullable = false, precision = 10, scale = 2)
-    private BigDecimal valorFrete;
+    private BigDecimal valorFrete = BigDecimal.ZERO;
 
     @NotNull
     @Column(name = "VALOR_DESCONTO", nullable = false, precision = 10, scale = 2)
-    private BigDecimal valorDesconto;
+    private BigDecimal valorDesconto = BigDecimal.ZERO;
 
     @NotNull
     @Column(name = "VALOR_TOTAL", nullable = false, precision = 10, scale = 2)
-    private BigDecimal valorTotal;
+    private BigDecimal valorTotal = BigDecimal.ZERO;
 
     @NotNull
     @Column(name = "FORMA_PAGAMENTO", nullable = false, length = 20)
@@ -52,7 +52,7 @@ public class Pedido implements Serializable {
     @NotNull
     @Column(name = "STATUS", nullable = false, length = 20)
     @Enumerated(EnumType.STRING)
-    private StatusPedido status;
+    private StatusPedido status = StatusPedido.ORCAMENTO;
 
     @Embedded
     private EnderecoEntrega enderecoEntrega;
@@ -174,18 +174,38 @@ public class Pedido implements Serializable {
         this.cliente = cliente;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Pedido pedido = (Pedido) o;
-
-        return id.equals(pedido.id);
+    @Transient
+    public boolean isNovo(){
+        return getId() == null;
     }
 
-    @Override
-    public int hashCode() {
-        return id.hashCode();
+    @Transient
+    public boolean isExistente(){
+        return !isNovo();
     }
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pedido other = (Pedido) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
 }

@@ -1,32 +1,31 @@
 package br.com.pedidovenda.converter;
 
-import br.com.pedidovenda.model.Categoria;
-import br.com.pedidovenda.repository.Categorias;
+import br.com.pedidovenda.model.Pedido;
+import br.com.pedidovenda.model.Produto;
+import br.com.pedidovenda.repository.Pedidos;
 import br.com.pedidovenda.util.cdi.CDIServiceLocator;
-import org.apache.commons.lang3.StringUtils;
 
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
-import javax.inject.Inject;
 
-@FacesConverter(forClass = Categoria.class)
-public class CategoriaConverter implements Converter {
+@FacesConverter(forClass = Pedido.class)
+public class PedidoConverter implements Converter {
 
-    private Categorias categorias;
+    private Pedidos pedidos;
 
-    public CategoriaConverter() {
-        categorias = CDIServiceLocator.getBean(Categorias.class);
+    public PedidoConverter() {
+        pedidos = CDIServiceLocator.getBean(Pedidos.class);
     }
 
     @Override
     public Object getAsObject(FacesContext facesContext, UIComponent uiComponent, String s) {
-        Categoria retorno = null;
+        Pedido retorno = null;
 
-        if(s != null){
+        if (s != null) {
             Long id = new Long(s);
-            retorno = categorias.porId(id);
+            retorno = this.pedidos.porId(id);
         }
 
         return retorno;
@@ -34,9 +33,12 @@ public class CategoriaConverter implements Converter {
 
     @Override
     public String getAsString(FacesContext facesContext, UIComponent uiComponent, Object o) {
+
         if (o != null) {
-            return ((Categoria) o).getId().toString();
+            Pedido pedido = (Pedido) o;
+            return pedido.getId() == null ? null : pedido.getId().toString();
         }
+
         return "";
     }
 }

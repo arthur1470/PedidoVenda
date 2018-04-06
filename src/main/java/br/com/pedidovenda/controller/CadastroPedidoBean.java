@@ -1,47 +1,78 @@
 package br.com.pedidovenda.controller;
 
-import br.com.pedidovenda.model.EnderecoEntrega;
-import br.com.pedidovenda.model.FormaPagamento;
-import br.com.pedidovenda.model.Pedido;
+import br.com.pedidovenda.model.*;
+import br.com.pedidovenda.repository.Clientes;
+import br.com.pedidovenda.repository.Usuarios;
+import br.com.pedidovenda.service.CadastroPedidoService;
+import br.com.pedidovenda.util.jsf.FacesUtil;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 @Named("cadastroPedidoBean")
 @ViewScoped
-public class CadastroPedidoBean implements Serializable{
-	private static final long serialVersionUID = 1L;
+public class CadastroPedidoBean implements Serializable {
+    private static final long serialVersionUID = 1L;
 
-	private Pedido pedido;
+    @Inject
+    private Usuarios usuarios;
 
-	private List<Integer> itens;
+    @Inject
+    private Clientes clientes;
 
-	@PostConstruct
-	public void init() {
-		this.pedido = new Pedido();
-		this.pedido.setEnderecoEntrega(new EnderecoEntrega());
-		this.itens = new ArrayList<>();
-		itens.add(1);
-	}
+    @Inject
+    private CadastroPedidoService cadastroPedidoService;
 
-	public void salvar(){
-		System.out.println(this.pedido.getFormaPagamento());
-	}
+    private Pedido pedido;
+    private List<Usuario> vendedores;
 
-	public List<Integer> getItens() {
-		return itens;
-	}
+    @PostConstruct
+    public void init() {
+        limpar();
+    }
 
-	public Pedido getPedido() {
-		return pedido;
-	}
+    public void inicializar() {
+        if (FacesUtil.isNotPostback()) {
+            this.vendedores = usuarios.vendedores();
+        }
+    }
 
-	public FormaPagamento[] getFormaPagamento(){
-		return FormaPagamento.values();
-	}
+    private void limpar() {
+        this.pedido = new Pedido();
+        this.pedido.setEnderecoEntrega(new EnderecoEntrega());
+    }
+
+    public void salvar() {
+        this.pedido = this.cadastroPedidoService.salvar(this.pedido);
+
+        FacesUtil.addInfoMessage("Pedido salvo com sucesso!");
+    }
+
+    public boolean isEditando(){
+        return !this.pedido.isNovo();
+    }
+
+    public FormaPagamento[] getFormasPagamento() {
+        return FormaPagamento.values();
+    }
+
+    public List<Cliente> completarCliente(String nome) {
+        return clientes.porNome(nome);
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
+
+    public List<Usuario> getVendedores() {
+        return vendedores;
+    }
 }

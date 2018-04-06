@@ -1,29 +1,51 @@
 package br.com.pedidovenda.controller;
 
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.SessionScoped;
+import br.com.pedidovenda.model.Pedido;
+import br.com.pedidovenda.model.StatusPedido;
+import br.com.pedidovenda.repository.Pedidos;
+import br.com.pedidovenda.repository.filter.PedidoFilter;
+
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @Named("pesquisaPedidosBean")
-@SessionScoped
+@ViewScoped
 public class PesquisaPedidosBean implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private List<Integer> pedidosFiltrados;
+    @Inject
+    private Pedidos pedidos;
 
-    @PostConstruct
-    public void init() {
-        this.pedidosFiltrados = new ArrayList<>();
-        for (int i = 0; i < 50; i++) {
-            this.pedidosFiltrados.add(i);
-        }
+    private PedidoFilter filtro;
+    private List<Pedido> pedidosFiltrados;
+
+    public PesquisaPedidosBean() {
+        filtro = new PedidoFilter();
+        pedidosFiltrados = new ArrayList<>();
     }
 
-    public List<Integer> getPedidosFiltrados() {
+    public void pesquisar() {
+        pedidosFiltrados = pedidos.filtrados(filtro);
+    }
+
+    public List<Pedido> getPedidosFiltrados() {
         return pedidosFiltrados;
+    }
+
+    public PedidoFilter getFiltro() {
+        return filtro;
+    }
+
+    public StatusPedido[] getStatuses() {
+        return StatusPedido.values();
+    }
+
+    public void setFiltro(PedidoFilter filtro) {
+        this.filtro = filtro;
     }
 }

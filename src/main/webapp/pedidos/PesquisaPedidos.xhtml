@@ -16,7 +16,8 @@
 			
 			<p:toolbar style="margin-top: 20px;">
 				<p:toolbarGroup>
-					<p:commandButton value="Pesquisar" />
+					<p:commandButton value="Pesquisar" action="#{pesquisaPedidosBean.pesquisar}"
+									 update="@form" />
 				</p:toolbarGroup>
 
 				<p:toolbarGroup align="right">
@@ -28,29 +29,30 @@
 				
 				<p:outputLabel value="Número" for="numero" />
 				<h:panelGroup>
-					<p:inputText value="" id="numero" size="10" /> 
+					<p:inputText value="#{pesquisaPedidosBean.filtro.numeroDe}" id="numero" size="10" />
 					a 
-					<p:inputText value="" size="10" />				
+					<p:inputText value="#{pesquisaPedidosBean.filtro.numeroAte}" size="10" />
 				</h:panelGroup>
 				
 				<p:outputLabel value="Data de criação" for="dataCriacao" />
 				<h:panelGroup>
-					<p:calendar id="dataCriacao" value="" pattern="dd/MM/yyyy" mask="99/99/9999" size="10" /> a 
-					<p:calendar value="" pattern="dd/MM/yyyy" mask="99/99/9999" size="10" />				
+					<p:calendar id="dataCriacao" value="#{pesquisaPedidosBean.filtro.dataCriacaoDe}"
+								pattern="dd/MM/yyyy" mask="99/99/9999" size="10" /> a
+					<p:calendar value="#{pesquisaPedidosBean.filtro.dataCriacaoAte}" pattern="dd/MM/yyyy"
+								mask="99/99/9999" size="10" />
 				</h:panelGroup>
 				
 				<p:outputLabel value="Vendedor" for="vendedor" />
-				<p:inputText value="" id="vendedor" size="40" />
+				<p:inputText value="#{pesquisaPedidosBean.filtro.nomeVendedor}" id="vendedor" size="40" />
 
 				<p:outputLabel value="Cliente" for="cliente" />
-				<p:inputText value="" id="cliente" size="40" />
+				<p:inputText value="#{pesquisaPedidosBean.filtro.nomeCliente}" id="cliente" size="40" />
 				
 				<p:outputLabel value="Status" />
-				<p:selectManyCheckbox>
-					<f:selectItem itemLabel="Orçamento" itemValue="orçamento" />
-					<f:selectItem itemLabel="Emitido" itemValue="emitido" />
-					<f:selectItem itemLabel="Cancelado" itemValue="cancelado" />
-				</p:selectManyCheckbox>								
+				<p:selectManyCheckbox value="#{pesquisaPedidosBean.filtro.statuses}">
+					<f:selectItems value="#{pesquisaPedidosBean.statuses}" var="status"
+								   itemLabel="#{status.descricao}" itemValue="#{status}" />
+				</p:selectManyCheckbox>
 			</p:panelGrid>
 			
 			
@@ -59,31 +61,37 @@
 				style="margin-top: 20px;" id="pedidosTable" >
 				
 				<p:column headerText="Número" style="text-align: center; width: 100px;">
-					<h:outputText value="12345" />
+					<h:outputText value="#{pedido.id}" />
 				</p:column>
 					
 				<p:column headerText="Cliente" >
-					<h:outputText value="Supermercado João das Couves" />
+					<h:outputText value="#{pedido.cliente.nome}" />
 				</p:column>
 					
 				<p:column headerText="Vendedor" >
-					<h:outputText value="José Júnior" />
+					<h:outputText value="#{pedido.vendedor.nome}" />
 				</p:column>
 					
 				<p:column headerText="Data de criação" style="width:140px; text-align: center;" >
-					<h:outputText value="05/06/2013"></h:outputText>
+					<h:outputText value="#{pedido.dataCriacao}">
+						<f:convertDateTime locale="pt_BR" pattern="dd/MM/yyyy" />
+					</h:outputText>
 				</p:column>
 
 				<p:column headerText="Valor total" style="width:120px; text-align: right;" >
-					<h:outputText value="R$1.240,00"></h:outputText>
+					<h:outputText value="#{pedido.valorTotal}">
+						<f:convertNumber type="currency" locale="pt_BR" />
+					</h:outputText>
 				</p:column>
 
 				<p:column headerText="Status" style="width:100px;">
-					<h:outputText value="Emitido"></h:outputText>
+					<h:outputText value="#{pedido.status.descricao}"></h:outputText>
 				</p:column>
 
 				<p:column style="width:50px; text-align: center;">
-					<p:button icon="ui-icon-pencil" />
+					<p:button icon="ui-icon-pencil" title="Editar" outcome="/pedidos/CadastroPedido">
+						<f:param name="pedido" value="#{pedido.id}"/>
+					</p:button>
 				</p:column>
 			</p:dataTable> 
 		</h:form>
