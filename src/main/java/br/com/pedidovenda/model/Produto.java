@@ -1,5 +1,6 @@
 package br.com.pedidovenda.model;
 
+import br.com.pedidovenda.service.NegocioException;
 import br.com.pedidovenda.validation.SKU;
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -115,4 +116,18 @@ public class Produto implements Serializable {
 			return false;
 		return true;
 	}
+
+    public void baixarEstoque(Integer quantidade) {
+        int novaQuantidade = this.getQuantidadeEstoque() - quantidade;
+
+        if(novaQuantidade < 0) {
+            throw new NegocioException("Não há disponibilidade no estoque de "
+                    + quantidade
+                    + " itens do produto "
+                    + this.getSku()
+                    + ".");
+        }
+
+        this.setQuantidadeEstoque(novaQuantidade);
+    }
 }

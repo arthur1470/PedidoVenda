@@ -245,4 +245,31 @@ public class Pedido implements Serializable {
     public boolean isOrcamento() {
         return StatusPedido.ORCAMENTO.equals(this.getStatus());
     }
+
+    public void removerItemVazio() {
+        ItemPedido primeiroItem = this.getItens().get(0);
+        if (primeiroItem != null && primeiroItem.getId() == null) {
+            this.getItens().remove(0);
+        }
+    }
+
+    @Transient
+    public boolean isValorTotalNegativo() {
+        return this.getValorTotal().compareTo(BigDecimal.ZERO) < 0;
+    }
+
+    @Transient
+    public boolean isEmitido() {
+        return StatusPedido.EMITIDO.equals(this.getStatus());
+    }
+
+    @Transient
+    public boolean isNaoEmissivel() {
+        return !this.isEmissivel();
+    }
+
+    @Transient
+    private boolean isEmissivel() {
+        return this.isExistente() && this.isOrcamento();
+    }
 }

@@ -10,6 +10,8 @@ import br.com.pedidovenda.validation.SKU;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.PostConstruct;
+import javax.enterprise.event.Observes;
+import javax.enterprise.inject.Produces;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -36,7 +38,10 @@ public class CadastroPedidoBean implements Serializable {
     @SKU
     private String sku;
 
+    @Produces
+    @PedidoEdicao
     private Pedido pedido;
+
     private List<Usuario> vendedores;
     private Produto produtoLinhaEditavel;
 
@@ -61,9 +66,15 @@ public class CadastroPedidoBean implements Serializable {
     }
 
     public void salvar() {
-        this.pedido = this.cadastroPedidoService.salvar(this.pedido);
+        this.pedido.removerItemVazio();
 
-        FacesUtil.addInfoMessage("Pedido salvo com sucesso!");
+        try {
+            this.pedido = this.cadastroPedidoService.salvar(this.pedido);
+
+            FacesUtil.addInfoMessage("Pedido salvo com sucesso!");
+        } finally {
+            this.pedido.adicionarItemVazio();
+        }
     }
 
     public void recalcularPedido() {
@@ -118,12 +129,17 @@ public class CadastroPedidoBean implements Serializable {
     public void atualizarQuantidade(ItemPedido item, int linha) {
         if (item.getQuantidade() < 1) {
             if (linha == 0) {
+                System.out.println("entrou no if");
                 item.setQuantidade(1);
             } else {
                 this.getPedido().getItens().remove(linha);
             }
         }
         this.pedido.recalcularValorTotal();
+    }
+
+    public void pedidoAlterado(@Observes PedidoAlteradoEvent event) {
+        this.pedido = event.getPedido();
     }
 
     public boolean isEditando() {
