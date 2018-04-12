@@ -8,11 +8,8 @@ import br.com.pedidovenda.util.jpa.Transactional;
 import javax.inject.Inject;
 import java.io.Serializable;
 
-public class EmissaoPedidoService implements Serializable {
+public class CancelamentoPedidoService implements Serializable {
     private static final long serialVersionUID = 1L;
-
-    @Inject
-    private CadastroPedidoService cadastroPedidoService;
 
     @Inject
     private Pedidos pedidos;
@@ -21,18 +18,20 @@ public class EmissaoPedidoService implements Serializable {
     private EstoqueService estoqueService;
 
     @Transactional
-    public Pedido emitir(Pedido pedido) {
-        pedido = this.cadastroPedidoService.salvar(pedido);
+    public Pedido cancelar(Pedido pedido) {
+        pedido = this.pedidos.porId(pedido.getId());
 
-        if (pedido.isNaoEmissivel()) {
-            throw new NegocioException("Pedido não pode ser emitido com status "
+        if (pedido.isNaoCancelavel()) {
+            throw new NegocioException("Pedido não pode ser cancelado no status "
                     + pedido.getStatus().getDescricao()
                     + ".");
         }
 
-        this.estoqueService.baixarItensEstoque(pedido);
+        if (pedido.isEmitido()) {
+            this.estoqueService.retornarItensEstoque(pedido);
+        }
 
-        pedido.setStatus(StatusPedido.EMITIDO);
+        pedido.setStatus(StatusPedido.CANCELADO);
 
         pedido = this.pedidos.guardar(pedido);
 

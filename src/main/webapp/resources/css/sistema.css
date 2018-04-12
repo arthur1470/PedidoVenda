@@ -2,100 +2,99 @@
 
 /* Global */
 h1 {
-	font-size: 24px;
-	font-family: sans-serif;
-	font-weight: 510;
-	padding: 0px;
-	margin: 0px;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 510;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* Template */
 body {
-	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0px;
-	font-weight: normal;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-weight: normal;
 }
 
 header {
-	padding: 5px 0px;
-	margin-bottom: 20px;
-	height: 30px;
-	background-color: #545454;
-	color: #ffffff;
-	font-weight: bold;
-	box-shadow: 0px 2px 2px #ccc;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+    height: 30px;
+    background-color: #545454;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px #ccc;
 }
 
 header > div {
-	margin-left: 8px;
+    margin-left: 8px;
 }
 
-.clear{
-	clear: both;
+.clear {
+    clear: both;
 }
 
 #conteudo {
-	padding: 0px 8px;
+    padding: 0px 8px;
 }
 
 footer {
-	paddin: 0px 8px;
-	margin-bottom: 10px;
+    paddin: 0px 8px;
+    margin-bottom: 10px;
 }
 
 #login-dialog {
-	width: 290px;
-	margin: auto;
-	margin-top: 150px;
+    width: 290px;
+    margin: auto;
+    margin-top: 150px;
 }
 
 .grid-login {
-	background-color: #f2f2f2;
-	border-radius: 8px;
-	border: 1px solid #ccc;
-	margin-top: 8px;
-	padding: 10px;
-	
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    padding: 10px;
+
 }
 
-.rotulo{
-	width: 150px;
+.rotulo {
+    width: 150px;
 }
 
-.ui-panelgrid td{
-	height: 34px;
+.ui-panelgrid td {
+    height: 34px;
 }
 
-.ajax-status{
-	position: fixed;
-	top: 55px;
-	right: 10px;
-	width: 35px;
-	height: 35px;
+.ajax-status {
+    position: fixed;
+    top: 55px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
 }
 
-.produto-tabela input{
-	width: 98%;
+.produto-tabela input {
+    width: 98%;
 }
-
 
 /* Customiza TabView - inicio*/
 
 .ui-tabs .ui-tabs-panel {
-	padding: 0.5em 0.2em !important;
+    padding: 0.5em 0.2em !important;
 }
 
 .ui-tabs {
-	padding: 0px !important;
+    padding: 0px !important;
 }
 
 .ui-tabs .ui-tabs-nav {
-	margin: -1px !important;
+    margin: -1px !important;
 }
 
 .ui-tabs.ui-tabs-top > .ui-tabs-nav {
-	padding: 0px !important;
+    padding: 0px !important;
 }
 
 /* Customiza TabView - fim*/
@@ -112,6 +111,11 @@ footer {
 }
 
 .menu-sistema .ui-icon-triangle-1-s {
-    background: url(#{resource['images:seta-para-baixo.png']}) no-repeat;
+    background: url(#{resource[ 'images:seta-para-baixo.png' ]}) no-repeat;
 }
+
 /* Menu sistema fim */
+
+.ui-state-disabled {
+	opacity: .80 !important;
+}

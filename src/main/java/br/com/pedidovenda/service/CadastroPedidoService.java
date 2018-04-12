@@ -21,7 +21,14 @@ public class CadastroPedidoService implements Serializable {
             pedido.setDataCriacao(new Date());
             pedido.setStatus(StatusPedido.ORCAMENTO);
         }
+
         pedido.recalcularValorTotal();
+
+        if (pedido.isNaoAlteravel()) {
+            throw new NegocioException("Pedido não pode ser alterado no status "
+                    + pedido.getStatus().getDescricao()
+                    + ".");
+        }
 
         if (pedido.getItens().isEmpty()) {
             throw new NegocioException("O pedido deve possuir pelo menos um item.");
