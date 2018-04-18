@@ -269,7 +269,7 @@ public class Pedido implements Serializable {
     }
 
     @Transient
-    private boolean isEmissivel() {
+    public boolean isEmissivel() {
         return this.isExistente() && this.isOrcamento();
     }
 
@@ -279,12 +279,12 @@ public class Pedido implements Serializable {
     }
 
     @Transient
-    private boolean isCancelavel() {
+    public boolean isCancelavel() {
         return this.isExistente() && !this.isCancelado();
     }
 
     @Transient
-    private boolean isCancelado() {
+    public boolean isCancelado() {
         return StatusPedido.CANCELADO.equals(this.getStatus());
     }
 
@@ -294,7 +294,12 @@ public class Pedido implements Serializable {
     }
 
     @Transient
-    private boolean isAlteravel() {
+    public boolean isAlteravel() {
         return this.isOrcamento();
+    }
+
+    @Transient
+    public boolean isNaoEnviavelPorEmail() {
+        return this.isNovo() || this.isCancelado();
     }
 }

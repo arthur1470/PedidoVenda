@@ -11,7 +11,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.jboss.weld.servlet</groupId>
             <artifactId>weld-servlet</artifactId>
@@ -86,6 +85,7 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- Api de servlet -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -93,17 +93,35 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Abstração para envio de e-mails -->
         <dependency>
             <groupId>com.outjected</groupId>
             <artifactId>simple-email</artifactId>
-            <version>0.2.6-SNAPSHOT</version>
+            <version>0.1.2-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 
+        <!-- Requerido para envio de e-mails -->
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>1.4.7</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Usamos para templates de email -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Usamos para formatar números em templates -->
+        <dependency>
+            <groupId>velocity-tools</groupId>
+            <artifactId>velocity-tools-generic</artifactId>
+            <version>1.1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

@@ -67,8 +67,7 @@
 					</p:button>
 					<p:commandButton icon="ui-icon-trash" title="Excluir" oncomplete="PF('confirmacaoExclusao').show()"
 						process="@this" update=":frmPesquisa:confirmacaoExclusaoDialog">
-						<f:setPropertyActionListener value="#{produto}" target="#{pesquisaProdutosBean.produtoSelecionado}" />
-					</p:commandButton>
+						<f:setPropertyActionListener value="#{produto}" target="#{pesquisaProdutosBean.produtoSelecionado}" /></p:commandButton>
 				</p:column>
 				
 			</p:dataTable>
